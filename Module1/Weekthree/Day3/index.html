@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+    <head>
+        
+        <title>Daniel's Page</title>
+    </head>
+    <style></style>
+    <body>
+    
+    <div class="method">
+        <h2 id="bedazzleMe">Resize</h2>
+        <button
+          type="button"
+          onclick="document.getElementById('bedazzleMe').style.fontSize='30px' "
+        >
+          Click Me!
+        </button>
+      </div>
+
+    <div class="way">
+      <h2 id="hidden">Hide</h2>
+      <button
+      type="button"
+      onclick="parentNode.remove('hidden')">
+
+      Click Me!
+    </div>
+
+  
+    <div class="method">
+      <h2>Display</h2>
+      <img src="https://images.unsplash.com/photo-1548681528-6a5c45b66b42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" id="toggleText" style="display:none">
+      <button
+        type="button"
+        onclick="document.getElementById('toggleText').style.display='block'"
+      >
+        Click Me!
+      </button>
+    </div>
+
+    </body>
+</html>

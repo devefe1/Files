@@ -1,0 +1,130 @@
+
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.homeContainer  {
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+
+    border: solid blue;
+    background-color: green;
+    z-index: -2;
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+  .navBar {
+      margin: 0 auto;
+      width: 100%;
+      height: 55px;
+      margin-top: 35px;
+      display: flex;
+      flex-direction: row;
+
+    /**/ animation: myFrames 5s ease-in 0s 1;
+    }
+    
+      .navBar ul li {
+        list-style: none;
+      }
+        .navButtonList {
+          margin: 0 auto;
+          display: flex;
+          flex-direction: row;
+          width: 60%;
+        }
+
+        .buttonText {
+          margin: 0 auto;
+          color: white;
+          border: solid white;
+          padding: 15px;
+          width: 80px;
+          text-align: center;
+        }
+
+        .buttonContainer {
+          border: sloid white; 
+          margin-right: 30px;
+          margin-left: 30px;
+          }
+          .homeBtn {
+            background-color: rgba(0, 0, 0, 0); /*transparent*/
+            color: white; 
+            padding: 12px 16px; 
+            font-size: 24px; 
+          }
+        .ptBtn {
+          background-color: rgba(0, 0, 0, 0); /*transparent*/
+          color: white; 
+          padding: 16px 16px; 
+          font-size: 16px; 
+        }
+  #homeContent {
+    text-align: center;
+    color: white;
+  }
+  #outlineText {
+      font-size: 80px;
+  }
+  #journeyText {
+      font-size: 32px;
+  }
+
+  .homeBackground {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      min-height: 100%;   /* align image height and div height */
+      z-index: -1;
+  }
+/*********************************************************/
+
+.mapContainer  {
+  background-color: rgb(224, 223, 223);
+  z-index: -1;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+  .monthLineContainer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+    .monthContainer {
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 95%;
+    }
+    .lineContainer {
+      position: absolute;
+      bottom: 4px;
+      width: 95%;
+      margin: 0 auto;
+    }
+      #orangeLine {
+        border: solid #FF6F48;
+        border-width: thin;
+      }
+    .dotContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 100%;
+      padding-bottom: 10px;
+    }
+      .dot {
+        height: 6px;
+        width: 6px;
+        background-color: #FF6F48;
+        border-radius: 50%;
+      }

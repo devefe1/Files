@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Methods in HTML</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Inconsolata";
+        background-color: #6232a6;
+        color: white;
+        padding: 2em;
+      }
+      .method {
+        border: 3px solid white;
+        padding: 1em;
+        margin: 2em;
+      }
+      #kitty-dance {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      #change-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      button {
+        width: 20%;
+        height: 4em;
+        font-size: 1em;
+      }
+      button:hover {
+        color: #6232a6;
+      }
+      #img-toggle {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>JavaScript Display functions</h1>
+    <div class="method">
+      <h2>Window Alert</h2>
+    </div>
+
+    <div class="method " id="cosmos">
+      <h2>Document Write</h2>
+    </div>
+
+    <div class="method ">
+      <h2>Using Inner HTML</h2>
+      <div id="sample"></div>
+    </div>
+
+    <div class="method ">
+      <h2>┏(・o･)┛</h2>
+      <h2>Console Log</h2>
+      <div id="sample"></div>
+    </div>
+
+    <div class="method" id="kitty-dance">
+      <h2>Onclick</h2>
+      <button onclick="addGiphy()">Click Me</button>
+      <br />
+      <br />
+    </div>
+
+    <div class="method" id="change-text">
+      <h1>What Can JavaScript Do?</h1>
+      <p id="banana">JavaScript can change the content in HTML page.</p>
+      <button type="button" onclick="changeText()">
+        Click Me!
+      </button>
+    </div>
+
+    <div class="method">
+      <h2>JavaScript can manipulate HTML attributes.</h2>
+      <h3>Change the src (source) attribute of an image with JAVASCRIPT.</h3>
+
+          <div id="img-toggle">
+            <button
+              onclick="document.getElementById('myImage').src='https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940319kdxsp3rf0i.png' "
+            >
+              Turn on the light
+            </button>
+            <img
+              id="myImage"
+              src="https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940208oq66nq8jew.png"
+              style="width:100px"
+            />
+            <button
+              onclick="document.getElementById('myImage').src='https://toppng.com/uploads/preview/light-bulb-on-off-png-11553940208oq66nq8jew.png'"
+            >
+              Turn off the light
+            </button>
+          </div>
+        </div>
+
+    <div class="method">
+      <h2>Change Text Style</h2>
+      <h2 id="bedazzleMe">JavaScript can change the style of an HTML page.</h2>
+      <button
+        type="button"
+        onclick="document.getElementById('bedazzleMe').style.fontFamily='Shrikhand' "
+      >
+        Click Me!
+      </button>
+    </div>
+
+    <div class="method">
+      <h2 id="hideMe">JavaScript can hide HTML TAGS.</h2>
+      <button
+        type="button"
+        onclick="document.getElementById('hideMe').style.display='none'"
+      >
+        Click Me!
+      </button>
+    </div>
+
+    <div class="method">
+      <h2>Lets play hide and go seek.</h2>
+      <p id="toggleText" style="display:none">Peekaboo!</p>
+      <button
+        type="button"
+        onclick="document.getElementById('toggleText').style.display='block'"
+      >
+        Click Me!
+      </button>
+    </div>
+
+    <script>
+      // 1. alert
+      //   window.alert("◎[▪‿▪]◎");
+
+      // ------------------------------------------
+
+      // 2. write
+      let addEle = () => {
+        //   create new div element
+        let newDiv = document.createElement("p");
+
+        // give it some content
+        let newContent = document.createTextNode(
+          "Vastness is bearable only through love white dwarf preserve and cherish that pale blue dot hearts of the stars star stuff harvesting star light laws of physics. The sky calls to us ship of the imagination colonies dream of the mind's eye hundreds of thousands bits of moving fluff. Finite but unbounded something incredible is waiting to be known finite but unbounded cosmic fugue the ash of stellar alchemy Apollonius of Perga."
+        );
+
+        // add the text node to the newly created div
+        newDiv.appendChild(newContent);
+
+        // add the newly created element and its content into the DOM
+        let currentDiv = document.getElementById("cosmos");
+        currentDiv.appendChild(newDiv);
+      };
+      addEle();
+      // ------------------------------------------
+
+      // 3. inner HTML
+      document.getElementById("sample").innerHTML = 50 + 200;
+
+      // ------------------------------------------
+
+      //   4. console.log
+      console.log("^o,o^");
+
+      // ------------------------------------------
+
+      //   5. onclick
+      let addGiphy = () => {
+        let img = document.createElement("img");
+        img.src = "https://media.giphy.com/media/33OrjzUFwkwEg/source.gif";
+        img.height = 500;
+        img.width = 400;
+        let currentDiv = document.getElementById("kitty-dance");
+        currentDiv.appendChild(img);
+      };
+
+      /*
+        **** explore ****
+        onmouseover: when mouse moves over an element
+        onload: when HTML page is finished loading
+        onkeydown:  when key on the keyboard is pressed
+        */
+
+      // ------------------------------------------
+
+      //  6. another onlcick
+      let changeText = () => {
+        document.getElementById("banana").innerHTML = "JAVASCRIPT IS LIFE!'";
+      };
+    </script>
+  </body>
+</html>

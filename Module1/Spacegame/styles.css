@@ -1,0 +1,42 @@
+/* #myBackground {
+    background-image: url(Game_img/85335.jpg);
+    height: 1080px;
+    width: 1800px;
+} */
+#myBackground {
+    background-image: url(Game_img/giphy.gif);
+    height: 1080px;
+    width: 1800px;
+}
+
+#Me{
+    background-image: url(Game_img/hero.png);
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 700px;
+    left: 700px;
+}
+
+.Opps{
+    background-image: url(Game_img/enemy2.png);
+    height: 100px;
+    width: 150px;
+    position: center;
+    padding-top: 10px;
+    top: 20px;
+    left: 450px;
+    transform: rotate(180deg);
+    margin-left: auto;
+    margin-right: auto;
+}
+.header{
+        position: center;
+        color: #f8e186;
+        font-family: 'Pathway Gothic One', sans-serif;
+        font-size: 100px;
+        font-weight: bolder;
+        text-align: center;
+        vertical-align: middle;
+        padding:0px;
+}

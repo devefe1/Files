@@ -1,0 +1,91 @@
+
+.ContactContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+    #socialBox {
+      min-width: auto;
+    }
+  
+      #buttonRow {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 300px;
+        height: 30px;
+        padding: 8px 5px;
+      }
+  
+        .socialLink {
+          border: solid salmon;
+          font-size: 16;
+          font-weight: bold;
+          color: salmon;
+        }
+  
+      #terms {
+        font-size: 16;
+        color: salmon;
+        width: 300px;
+      }
+        .inlineBold {
+          font-weight: bold;
+        }
+      #claims {
+        color: rgb(192, 181, 181);
+        width: 300px;
+      }
+  
+    #contactBox {
+      min-width: auto;
+      right: 0px;
+    }
+      #inviteSubscribe, #partners {
+        font-size: 18;
+        font-weight: bold;
+        color: salmon;
+        width: 300px;
+        text-align: left;
+      }
+      #emailInput {
+        border: solid salmon;
+        font-size: 12;
+        font-weight: bold;
+        color: gray;
+        width: 300px;
+      }
+      #signature {
+        width: 50px;
+      }
+  
+    #copyrightContainer {
+      background-color: salmon;
+      padding: 3px;
+      margin-top: 20px;
+      padding-top: 10px;
+      }
+      #copyright1, #copyright2 {
+        margin: 0;
+        color: white;
+        font-size: 14px;
+        text-align: center;
+      }
+      #curiosityBox {
+        border-style: inset;
+        background-color: orangered;
+        position: relative;
+        bottom: 0px;
+        left: 85%;
+        width: 200px;
+        height: auto;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+      }
+        #curosityTxt {
+          font-size: 12px;
+          margin: 0 auto;
+        }
+    
+

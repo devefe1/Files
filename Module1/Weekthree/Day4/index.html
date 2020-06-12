@@ -1,0 +1,104 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Input Fields</title>
+    <style>
+    
+      input {
+        border: 2px solid red;
+      }
+      h2 {
+        color:salmon;
+      }
+      #total {
+        margin-top: 1em;
+      }
+    </style>
+  </head>
+  <body>
+   
+    <div>
+        <h2>Sum</h2>
+       <input id="a" type="text" />
+       <input id="b" type="text" />
+       <input id="c" type="text" />
+       <button type="button" onclick="sum()">add</button>
+    </div>
+    <div>
+        <input id="total" />
+    </div>
+    <div>
+        <h2>Multiply</h2>
+        <input id="d" type="text" />
+        <input id="e" type="text" />
+        <input id="f" type="text" />
+        <button type="button" onclick="multiply()">multiply</button>
+    </div>
+    <div>
+        <input id="totals" />
+    </div>
+
+    <div>
+        <h2>Divide</h2>
+        <input id="g" type="text" />
+        <input id="h" type="text" />
+        <input id="i" type="text" />
+        <button type="button" onclick="divide()">divide</button>
+    </div>
+        <input id="totaled"/>
+
+    <div>
+        <h2>Subtract</h2>
+        <input id="j" type="text" />
+        <input id="k" type="text" />
+        <input id="l" type="text" />
+        <button type="button" onclick= "subtract()">subtract</button>
+    </div>
+        <input id="totaled1"/>
+
+    <script>
+      let sum = () => {
+        // capture the entered values of two input boxes
+        let firstNum = document.getElementById("a").value;
+        let secNum = document.getElementById("b").value;
+        let thirdNum = document.getElementById("c").value;
+
+        // add them together and display
+        let sum = parseInt(firstNum) + parseInt(secNum) + parseInt(thirdNum);
+        console.log(sum);
+        document.getElementById("total").value = sum;
+      };
+       let multiply = () => {
+           let firstNum = document.getElementById("d").value;
+           let secNum = document.getElementById("e").value;
+           let thirdNum = document.getElementById("f").value;
+
+           let multiply = parseInt(firstNum) * parseInt(secNum) * parseInt(thirdNum);
+           console.log(multiply);
+           document.getElementById("totals").value = multiply;
+       };
+       let divide = () => {
+           let firstNum = document.getElementById("g").value;
+           let secNum = document.getElementById("h").value;
+           let thirdNum = document.getElementById("i").value;
+
+           let divide = parseInt(firstNum) / parseInt(secNum) / parseInt(thirdNum);
+           console.log(divide);
+           document.getElementById("totaled").value = divide;
+       };
+        let subtract= () =>{
+            let firstNum = document.getElementById("j").value;
+            let secNum = document.getElementById("k").value;
+            let thirdNum = document.getElementById("l").value;
+
+            let subtract = parseInt(firstNum) - parseInt(secNum) - parseInt (thirdNum);
+            console.log(subtract);
+            document.getElementById("totaled1").value = subtract;
+        };
+        
+
+    </script>
+  </body>
+</html>

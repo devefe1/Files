@@ -1,0 +1,56 @@
+
+
+.pgContainer  {
+  display: flex;
+  flex-direction: column; 
+  text-align: center;
+
+  width: 100%;
+  height: auto;
+
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+#quote1, #quote2, #quote3 {
+  margin: 0 auto;
+  font-size: 26px;
+  color: #E7B1B1;
+}
+#quote1 {
+  width: 500px;
+}
+#quote2 {
+  width: 600px;
+}
+#quote3 {
+  width: 400px;
+}
+
+#explainQuote1, #explainQuote2, #explainQuote3 {
+  margin: 0 auto;
+  font-size: 12px;
+}
+#explainQuote1{
+  width: 600px;
+}
+#explainQuote2{
+  width: 500px;
+}
+#explainQuote3{
+  width: 400px;
+}
+
+#welcomeContainer {
+  margin: 0 auto;
+  border: solid #E7B1B1;
+  padding: 10px 20px;
+}
+
+#welcomeMsg  {
+  margin: 0 auto;
+  color: #E7B1B1;
+  font-size: 20px;
+  width: 500px;
+  font-weight: bold;
+}

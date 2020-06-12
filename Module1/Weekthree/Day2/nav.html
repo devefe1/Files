@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+    <head>
+       
+        <title>Nav Bar</title>
+        <style>
+            @keyframes Frames {
+                0% {
+                    width: 0%;
+                }
+                50% {
+                    width: 50%;
+                    
+                }
+                 100% {
+                     width: 100%;
+                     background-color: teal;
+                 }
+            }
+        .menu {
+            border: 1px solid black;
+            animation: Frames 5s ease-in 0s 1;
+        }
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            justify-items: space-around;
+        }
+        .menu ul li {
+        list-style: none;
+        }
+
+        </style>
+        
+    </head>
+    <body>
+            <nav class="menu">
+              <ul class="flex-container">
+                <li><a> Home </a></li>
+                <li><a> Visit </a></li>
+                <li><a> Store </a></li>
+                <li><a> About Us </a></li>
+              </ul>
+            </nav>
+        
+    </body>
+</html>
